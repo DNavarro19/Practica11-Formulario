@@ -68,8 +68,7 @@ export class HomePage implements OnInit {
     console.log(values);
     let navigationExtras: NavigationExtras = {
       queryParams: {
-        dni: JSON.stringify(values),
-        iban: JSON.stringify(values)
+        user: JSON.stringify(values),
       }
     };
     this.navCtrl.navigateForward('/datos', navigationExtras);
